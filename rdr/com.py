@@ -7,4 +7,5 @@ def combNumber(m, n, b):
             print (b)
             
 group=[0,0,0]
+
 combNumber(5,3,group)
