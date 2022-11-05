@@ -287,7 +287,7 @@ class Pikachu:
         t.seth(10)
         t.circle(100, 60)
 
-        # 横向
+        # 横
         t.seth(180)
         t.circle(-100, 10)
         t.left(180)
