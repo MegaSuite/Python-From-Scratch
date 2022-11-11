@@ -26,13 +26,13 @@ def delete_person():
             del persons[i-1]
             print(persons)
         else:
-            return '并无此联系人'
+            print('查无此人')
 
 def query_person():
     name=input('请输入要查询的联系人的姓名:')
     for item in persons:
         if name in item['name']:
-            print('查询到的联系人信息如下')
+            print('联系人信息如下')
             print('联系人的姓名是%s,手机号是%s' % (item['name'],item['tel']))
         else:
             print('查无此人')
