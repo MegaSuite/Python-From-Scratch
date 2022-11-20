@@ -13,8 +13,9 @@ def print_menu():
 
 def create_person():
     name=input('请输入姓名:')
+    add=input('请输入地址:')
     tel=input('请输入手机号:')
-    dic={'name':name,'tel':tel}#在此更改信息种类及数目
+    dic={'name':name,'address':add,'tel':tel}#在此更改信息种类及数目
     persons.append(dic)
     print(persons)
 
@@ -35,19 +36,19 @@ def query_person():
     for item in persons:
         if name in item['name']:
             print('联系人信息如下')
-            print('联系人的姓名是%s,手机号是%s' % (item['name'],item['tel']))
+            print('联系人的姓名是%s,地址是%s,手机号是%s' % (item['name'],item['add'],item['tel']))
         else:
             print('查无此人')
 
 def list_all_persons():
-    print('姓名 手机号')
+    print('姓名 地址 手机号')
     for item in persons:
-        print(item['name'],item['tel'])
+        print(item['name'],item['add'],item['tel'])
 
 def save_as_file():
     with open('./prj.txt','w',encoding='utf-8') as f:
         for item in persons:
-            f.write(str(item['name'])+' '+str(item['tel'])+'\n')
+            f.write(str(item['name'])+' '+str(item['add'])+' '+str(item['tel'])+'\n')
 
 def input_from_file():
     with open("./prj.txt", 'r', encoding='utf-8') as infile:#在此更改导入文件名
@@ -57,8 +58,9 @@ def input_from_file():
             for i in data_line:
                 data.append(i)
             name=data[0]
-            tel=data[1]
-            dic={'name':name,'tel':tel}
+            add=data[1]
+            tel=data[2]
+            dic={'name':name,'address':add,'tel':tel}
             persons.append(dic)
             data=[]
     print("Succeeded!")
