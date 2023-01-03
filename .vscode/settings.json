@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "c:\\Users\\flans\\Desktop\\Python CODES\\wx.html"
+    "livePreview.defaultPreviewPath": "c:\\Users\\flans\\Desktop\\Python CODES\\wx.html",
+    "python.analysis.typeCheckingMode": "basic"
 }
