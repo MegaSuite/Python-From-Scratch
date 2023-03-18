@@ -1,4 +1,7 @@
 {
     "livePreview.defaultPreviewPath": "c:\\Users\\flans\\Desktop\\Python CODES\\wx.html",
-    "python.analysis.typeCheckingMode": "basic"
+    "python.analysis.typeCheckingMode": "basic",
+    "files.exclude": {
+        "**/desktop.ini": true
+    }
 }
