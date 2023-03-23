@@ -14,3 +14,4 @@ plt.scatter(inputb,squares,s=20,c=squares,cmap='Blues',edgecolor=None)
 
 # plt.show()
 plt.savefig("xx.png")
+# this is a test
