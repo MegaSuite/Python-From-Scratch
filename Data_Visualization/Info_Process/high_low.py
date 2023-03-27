@@ -18,10 +18,11 @@ with open(filename) as f:
     lows=[]
 
     for row in reader:
+        current_date=datetime.strptime(row[0],"%Y-%m-%d")
         try:
             high=int(row[1])
             low=int(row[3])
-            current_date=datetime.strptime(row[0],"%Y-%m-%d")
+            
         except ValueError:
             print(current_date,'missing data')
         else:
