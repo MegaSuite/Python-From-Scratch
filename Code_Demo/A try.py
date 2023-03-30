@@ -7,9 +7,8 @@
 * Date: 2023/02/06 星期一 14:51
 * ===================================================================
 '''
-# from sys import argv
-# argv=input()
-# a,b,c=argv
-# print(a,b,c)
-import random
-print(random.randint(1,4))
+import requests
+
+url='https://www.youtube.com'
+r=requests.get(url)
+print(r.status_code)
