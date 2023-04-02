@@ -8,4 +8,10 @@ Python From Scratch
 Catch Colonel Sanders
 </h2>
 
-#### An simple game developed by pygame , imitating the game `Alien Invasion` from  `Python Crash Course--A hands-on ,project-based introduction to programming`   
+#### A simple game developed by pygame , imitating the game `Alien Invasion` from  `Python Crash Course--A hands-on ,project-based introduction to programming`   
+
+<h2 align='center'>
+Django Blog
+</h2>
+
+#### A blog built by Django 
