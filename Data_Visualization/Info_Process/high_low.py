@@ -37,6 +37,7 @@ with open(filename) as f:
     plt.plot(dates,lows,c='blue',alpha=0.5)
     plt.fill_between(dates,highs,lows,facecolor='blue',alpha=0.1) # type: ignore
 
+
     # Format plot.
 
     title="Daily high and low temperatures - 2014\nSitka, AK"
