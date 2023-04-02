@@ -11,7 +11,7 @@ BROWSER = webdriver.Chrome(ChromeDriverManager().install())
 
 
 def write_csv(ads):
-    with open('results.csv', 'a',encoding='utf-8-sig') as f:
+    with open('sel.csv', 'a',encoding='utf-8-sig') as f:
         fields = ['title', 'link', 'price']
 
         writer = csv.DictWriter(f, fieldnames=fields)
