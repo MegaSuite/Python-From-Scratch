@@ -27,7 +27,7 @@ def topic(request, topic_id):
     # Make sure the topic belongs to the current user.
     if topic.owner != request.user:
         raise Http404
-    entries = topic.entry_set.order_by('-date_added')
+    entries = topic.entry_set.order_by('-date_added') # type: ignore
     context = {'topic': topic, 'entries': entries}
     return render(request, 'learning_logs/topic.html', context)
 
@@ -88,7 +88,7 @@ def edit_entry(request, entry_id):
         form = EntryForm(instance=entry, data=request.POST)
         if form.is_valid():
             form.save()
-            return HttpResponseRedirect(reverse('learning_logs:topic', args=[topic.id]))
+            return HttpResponseRedirect(reverse('learning_logs:topic', args=[topic.id])) # type: ignore
 
     context = {'entry': entry, 'topic': topic, 'form': form}
     return render(request, 'learning_logs/edit_entry.html', context)
