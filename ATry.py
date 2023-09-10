@@ -1,10 +1,12 @@
-def count():
-     fs=[]
-     for i in range(1,4):
-             def f():
-                     return i*i
-             fs.append(f)
-     print(fs)
-     return fs
-f1,f2,f3=count()
-print(count())
+import requests
+
+def waifu():
+    url = 'https://moe.anosu.top/img'
+    pic = requests.get(url)
+    print(pic)
+    with open('waifu.jpg', 'wb') as f:
+        f.write(pic.content)
+        f.close()
+
+if __name__ == '__main__':
+        waifu()
