@@ -178,5 +178,6 @@ pyrightconfig.json
 
 desktop.ini 
 .pyc
+.jpg
 
 # End of https://www.toptal.com/developers/gitignore/api/python
